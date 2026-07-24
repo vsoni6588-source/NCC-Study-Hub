@@ -1,0 +1,16 @@
+# Local runtime uploads
+upload/
+uploads/
+
+# Editor and OS junk
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Local dependency folders if used later
+vendor/
+node_modules/
+
+# Optional: ignore local database export files if you do not want them committed
+*.sql
