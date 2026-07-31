@@ -1,0 +1,171 @@
+/* ================= NAVBAR ================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 40px;
+    background:linear-gradient(90deg,#0a1d3b,#8c7a2a);
+    color:#fff;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:50px;
+}
+
+.logo h2{
+    font-size:26px;
+    margin:0;
+}
+
+.logo p{
+    font-size:13px;
+    opacity:.8;
+    margin-top:3px;
+}
+
+.nav-container{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav-container nav ul{
+    display:flex;
+    list-style:none;
+    gap:22px;
+}
+
+.nav-container nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.nav-container nav ul li a:hover{
+    color:#ffd700;
+}
+
+.auth-btn{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.login,
+.signup{
+    text-decoration:none;
+    padding:9px 18px;
+    border-radius:25px;
+}
+
+.login{
+    border:1px solid #fff;
+    color:#fff;
+}
+
+.signup{
+    background:#d4af37;
+    color:#000;
+}
+
+.profile-btn{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:#ff5b00;
+    color:#fff;
+    padding:10px 18px;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+.profile-menu{
+    position:relative;
+}
+
+.profile-dropdown{
+    position:absolute;
+    top:60px;
+    right:0;
+    width:300px;
+    background:#1f1f1f;
+    border-radius:12px;
+    overflow:hidden;
+    display:none;
+}
+
+.profile-dropdown.show{
+    display:block;
+}
+
+.menu-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.navbar{
+    padding:15px 20px;
+    flex-wrap:wrap;
+}
+
+.menu-toggle{
+    display:block;
+}
+
+.nav-container{
+    display:none;
+    width:100%;
+    flex-direction:column;
+    align-items:center;
+    background:#0a1d3b;
+    padding:20px 0;
+    margin-top:15px;
+}
+
+.nav-container.active{
+    display:flex;
+}
+
+.nav-container nav{
+    width:100%;
+}
+
+.nav-container nav ul{
+    flex-direction:column;
+    gap:18px;
+    align-items:center;
+}
+
+.auth-btn{
+    margin-top:20px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.logo p{
+    font-size:11px;
+}
+
+}

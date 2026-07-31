@@ -1,0 +1,225 @@
+
+
+
+body{
+font-family: 'Segoe UI', sans-serif;
+
+margin:0;
+padding:0px;
+}
+
+.training-section{
+max-width:900px;
+margin:auto;
+}
+
+.section-title{
+font-size:24px;
+font-weight:700;
+margin-bottom:25px;
+margin-top:40px;
+border-bottom:2px solid #ddd;
+padding-bottom:10px;
+color:#333;
+}
+
+.training-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.training-card{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:linear-gradient(135deg,#6b6f3b,#4f532a);
+padding:18px 20px;
+border-radius:10px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.training-card:hover{
+transform:translateY(-3px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.icon{
+font-size:28px;
+margin-right:15px;
+}
+
+.text{
+flex:1;
+}
+
+.text h3{
+margin:0;
+font-size:18px;
+}
+
+.text p{
+margin:4px 0 0;
+font-size:13px;
+opacity:0.9;
+}
+
+.arrow{
+font-size:20px;
+opacity:0.8;
+}
+
+.armyhero{
+height:250px;
+margin-top:80px;
+
+background-image:
+linear-gradient(to right,
+rgba(6,25,45,0.95) 35%,
+rgba(6,25,45,0.75) 50%,
+rgba(6,25,45,0.0) 70%
+),
+url("../../images/army.jpeg");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding-left:80px;
+color:white;
+}
+
+
+.hero-navy{
+height:250px;
+margin-top:80px;
+background-image:
+linear-gradient(to right,
+rgba(6,25,45,0.95) 35%,
+rgba(6,25,45,0.75) 50%,
+rgba(6,25,45,0.0) 70%
+),
+url("../../images/navy.jpeg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding-left:80px;
+color:white;
+}
+
+.hero-air{
+    height:250px;
+margin-top:80px;
+background-image:
+linear-gradient(to right,
+rgba(6,25,45,0.95) 35%,
+rgba(6,25,45,0.75) 50%,
+rgba(6,25,45,0.0) 70%
+),
+url("../../images/air.jpeg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+padding-left:80px;
+color:white;
+}
+
+
+
+
+.main-footer{
+background:#0f1b2a;
+color:white;
+padding:30px 0;
+width:100%;
+
+}
+
+.footer-container{
+width:100%;
+padding:0 40px;
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+box-sizing:border-box;
+}
+
+.footer-column{
+width:180px;
+}
+
+.footer-column h3{
+font-size:16px;
+margin-bottom:10px;
+}
+
+.footer-column ul{
+list-style:none;
+padding:0;
+}
+
+.footer-column ul li{
+margin:5px 0;
+}
+
+.footer-column ul li a{
+color:#ccc;
+text-decoration:none;
+}
+
+.footer-column ul li a:hover{
+color:white;
+}
+
+.footer-logo img{
+width:80px;
+}
+
+.footer-column p{
+font-size:14px;
+margin:5px 0;
+}
+
+/* Social Icons */
+
+.social-icons a{
+display:inline-block;
+width:30px;
+height:30px;
+background:#2c3e50;
+color:white;
+text-align:center;
+line-height:30px;
+border-radius:50%;
+text-decoration:none;
+margin-right:5px;
+}
+
+.social-icons a:hover{
+background:#ffd700;
+color:black;
+}
+
+/* Bottom Footer */
+
+.footer-bottom{
+text-align:center;
+margin-top:20px;
+border-top:1px solid #333;
+padding-top:10px;
+font-size:13px;
+color:#aaa;
+}
+
+.training-section{
+max-width:900px;
+margin:auto;
+margin-bottom:60px; /* footer से gap */
+}
